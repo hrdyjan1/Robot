@@ -1,21 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
 
-  <title>BiteCorn</title>
+<head>
+	<meta charset="utf-8">
+	<title>BiteCorn</title>
 
   <!-- TODO: Description -->
-  <meta name="description" content="BiteCorn - description">
+	<meta name="description" content="BiteCorn - description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/style.css">
-
-  <!--[if lt IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/interactions.css">
 </head>
 
 <body>
-  <script src="js/script.js"></script>
+	<div class="img-background">
+		<div class="container">
+			<header class="main-header clearfix">
+				<img class="logo" src="img/corn.png">
+				<h1 class="name">Lorem <span>Ipsum</span></h1>
+			</header>
+
+			<nav>
+				<ul>
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">News</a></li>
+				  <li><a href="#">Contact</a></li>
+				  <li><a href="#">About</a></li>
+					<li id="last-search">
+						<div class="search-input">
+					    <span class="icon">
+								<!-- <img class="logo" src="img/search.svg"> -->
+								<i class="material-icons">search</i>
+					    </span>
+					    <input type="search" id="search" placeholder="Search..." />
+						</div>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="content clearfix">
+
+				<div class="photo-container">
+				  <img src="img/photos/1.jpg" alt="Photo of a rabbit">
+			  	<h3>Reflective Rabbit</h3>
+			  	<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+					<a href="#" class="button">download</a>
+				</div>
+
+				<div class="photo-container">
+				  <img src="img/photos/2.jpg" alt="An old-school Vanagon">
+			  	<h3>Old-school Vanagon</h3>
+			  	<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+					<a href="#" class="button">download</a>
+				</div>
+
+				<div class="photo-container">
+				  <img src="img/photos/3.jpg" alt="A mischievous-looking teddy">
+			  	<h3>Mischievous Teddy</h3>
+			  	<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+					<a href="#" class="button">download</a>
+				</div>
+
+				<!-- Photos with overlay -->
+				<div class="photo-container">
+					<div class="photo">
+					  <img src="img/photos/4.jpg" alt="An awkward horse head">
+					  <div class="photo-overlay">
+						  <h3>Snarky Horse</h3>
+						  <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+						</div>
+					</div>
+					<a href="#" class="button">download</a>
+				</div>
+
+				<div class="photo-container">
+					<div class="photo">
+					  <img src="img/photos/5.jpg" alt="The ultimate fixie bike">
+					  <div class="photo-overlay">
+						  <h3>Ultimate Fixie</h3>
+						  <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+						</div>
+					</div>
+					<a href="#" class="button">download</a>
+				</div>
+
+				<div class="photo-container">
+					<div class="photo">
+					  <img src="img/photos/6.jpg" alt="Real vines, not the internet ones">
+					  <div class="photo-overlay">
+						  <h3>The Real Vines</h3>
+						  <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+						</div>
+					</div>
+					<a href="#" class="button">download</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>

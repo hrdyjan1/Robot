@@ -1,0 +1,271 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+	/*border: 1px solid red;*/
+}
+body {
+	font: 1em/1.5 'Josefin Sans', sans-serif;
+	color: #373737;
+	background: white;
+  margin: 0px;
+}
+a {
+	text-decoration: none;
+}
+h1,
+h2,
+h3 {
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 1.125em;
+	color: #4a89ca;
+	font-weight: 600;
+	margin: 0;
+}
+h3 {
+	font-size: 1.3em;
+	line-height: 1.25em;
+	margin-top: .85em;
+	margin-bottom: .5em;
+}
+p {
+	font-size: .875em;
+	line-height: 1.4;
+	margin: 0 0 1.5em;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+.container {
+	max-width: 1200px;
+	background: #fff;
+	margin: auto;
+  z-index: 1000;
+  position: relative;
+  margin-top: 10em;
+  margin-bottom: 5em;
+	cursor: auto;
+}
+.main-header {
+	text-align: center;
+	padding: 3em 0 1em 0;
+}
+.photo-container {
+	text-align: center;
+	margin-bottom: 4em;
+}
+
+.img-background{
+
+  background-image: url("https://wallpaperbrowse.com/media/images/background-7.jpg");
+
+  background-repeat: repeat-y;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0pt;
+  cursor: pointer;
+
+  background-position-x: 50%;
+  background-size: initial;
+  background-attachment: scroll;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+
+}
+
+/* ---- Page Elements ---- */
+.name {
+	font-size: 1.65em;
+	font-weight: 800;
+	margin: 0 0 1.5em;
+	line-height: 1;
+}
+.name span {
+	font-weight: 300;
+	margin-left: -4px;
+}
+.logo {
+	width: 45px;
+	margin-bottom: .4em;
+}
+.photo {
+	position: relative;
+	line-height: 0;
+	margin-bottom: 2em;
+	overflow: hidden;
+}
+.photo-container img {
+ 	max-width: 100%;
+}
+.button {
+	width: 70%;
+	font-weight: 700;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 0;
+	margin: auto;
+}
+
+/* ---- Photo Overlay ---- */
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, .65);
+}
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+/* =================================
+  Navigation
+==================================== */
+
+ul {
+    list-style-type: none;
+    margin: 0 0 1em 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+nav li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+/* ---- Search ---- */
+
+#last-search{
+	float: right;
+}
+
+.search-input{
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.search-input input#search{
+  width: 48px;
+  height: 52px;
+  background: #ddd;
+  border: none;
+  /*float: left;*/
+  color: #666;
+  padding-left: 40px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+	font: 1em/1.5 'Josefin Sans', sans-serif;
+
+  -webkit-transition: width .55s ease;
+  -moz-transition: width .55s ease;
+  -ms-transition: width .55s ease;
+  -o-transition: width .55s ease;
+  transition: width .55s ease;
+}
+
+/* Color Input - "Search..." */
+.search-input input#search::-webkit-input-placeholder {color: #65737e;}
+.search-input input#search:-moz-placeholder { /* Firefox 18- */color: #65737e;}
+.search-input input#search::-moz-placeholder {  /* Firefox 19+ */color: #65737e;}
+.search-input input#search:-ms-input-placeholder {color: #65737e;}
+
+.search-input .icon{
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 14px;
+  z-index: 100;
+  color: #4f5b66;
+}
+
+.search-input input#search:focus, .search-input input#search:active{
+  outline:none;
+  width: 300px;
+}
+
+.search-input:hover input#search{
+	width: 300px;
+}
+
+.search-input:hover .icon{
+  color: #93a2ad;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 0) and (max-width: 768px) {
+	.container {
+		padding: 0 1.225em 2.5em;
+	}
+}
+@media (min-width: 769px) {
+	.container {
+		padding: 0 2.25em 4em;
+	}
+	.photo-container {
+		width: 48%;
+		float: left;
+		margin-left: 4%;
+	}
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+	.photo-container:nth-child(2n+1) {
+		margin-left: 0;
+		clear: left;
+	}
+}
+@media (min-width: 1025px) {
+	.photo-container {
+		width: 30.63973064%;
+	}
+	.photo-container:nth-child(3n+1) {
+		margin-left: 0;
+		clear: left;
+	}
+}
