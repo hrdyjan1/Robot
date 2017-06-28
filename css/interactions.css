@@ -2,10 +2,30 @@
   Button Transitions
 ==================================== */
 
-.button {
+.button-order {
 	color: #fff;
-	background: #4a89ca;
+	background: #f6c88c;
 }
+
+.button-order:hover{
+	background: #69cdb1;
+}
+
+.try{
+	position: relative;
+	height: 240px;
+}
+
+.try img{
+	padding: 0 10px 0 10px;
+	max-height: 260px;
+	position: absolute;
+  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -50%);
+}
+
 
 /* =================================
   Photo Overlay Transitions

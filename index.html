@@ -13,6 +13,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/interactions.css">
+	<link rel="stylesheet" href="css/carousel.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
 		<div class="container">
 			<header class="main-header clearfix">
 				<img class="logo" src="img/corn.png">
-				<h1 class="name">Lorem <span>Ipsum</span></h1>
+				<h1 class="name">Bite <span>Corn</span></h1>
 			</header>
 
 			<nav>
@@ -41,27 +42,104 @@
 				</ul>
 			</nav>
 
+			<div class="carousel">
+					<div class="carousel-inner">
+
+							<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+							<div class="carousel-item">
+									<img src="img\carousel\moda.jpg">
+							</div>
+
+							<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" >
+							<div class="carousel-item">
+									<img src="img\carousel\lg.png">
+							</div>
+
+							<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+							<div class="carousel-item">
+									<img src="img\carousel\lego.png">
+							</div>
+
+							<label for="carousel-3" class="carousel-control prev control-1">‹</label>
+							<label for="carousel-2" class="carousel-control next control-1">›</label>
+							<label for="carousel-1" class="carousel-control prev control-2">‹</label>
+							<label for="carousel-3" class="carousel-control next control-2">›</label>
+							<label for="carousel-2" class="carousel-control prev control-3">‹</label>
+							<label for="carousel-1" class="carousel-control next control-3">›</label>
+
+							<ol class="carousel-indicators">
+									<li>
+											<label for="carousel-1" class="carousel-bullet">•</label>
+									</li>
+									<li>
+											<label for="carousel-2" class="carousel-bullet">•</label>
+									</li>
+									<li>
+											<label for="carousel-3" class="carousel-bullet">•</label>
+									</li>
+							</ol>
+
+					</div>
+			</div>
+
+			<div class="recomendation">
+				<h1 id="title">We recommend</h1>
+			</div>
+
 			<div class="content clearfix">
 
 				<div class="photo-container">
-				  <img src="img/photos/1.jpg" alt="Photo of a rabbit">
-			  	<h3>Reflective Rabbit</h3>
+					<div class="try">
+						<img src="img/photos/windows.jpg" alt="Photo of a rabbit">
+					</div>
+			  	<h3>Windows 10s</h3>
 			  	<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-					<a href="#" class="button">download</a>
+					<a href="#" class="button-order">download</a>
 				</div>
 
 				<div class="photo-container">
-				  <img src="img/photos/2.jpg" alt="An old-school Vanagon">
-			  	<h3>Old-school Vanagon</h3>
+					<div class="try">
+					  <img src="img/photos/linux.jpg" alt="An old-school Vanagon">
+			  	</div>
+					<h3>Linux</h3>
 			  	<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-					<a href="#" class="button">download</a>
+					<a href="#" class="button-order">download</a>
 				</div>
 
 				<div class="photo-container">
-				  <img src="img/photos/3.jpg" alt="A mischievous-looking teddy">
-			  	<h3>Mischievous Teddy</h3>
+					<div class="try">
+						<img src="img/photos/debian.jpg" alt="A mischievous-looking teddy">
+					</div>
+			  	<h3>Debian</h3>
 			  	<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-					<a href="#" class="button">download</a>
+					<a href="#" class="button-order">download</a>
+				</div>
+
+				<div class="photo-container">
+					<div class="try">
+						<img src="img/photos/mac.jpg" alt="Photo of a rabbit">
+					</div>
+			  	<h3>Mac OS</h3>
+			  	<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+					<a href="#" class="button-order">download</a>
+				</div>
+
+				<div class="photo-container">
+					<div class="try">
+					  <img src="img/photos/android.jpg" alt="An old-school Vanagon">
+			  	</div>
+					<h3>Android</h3>
+			  	<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+					<a href="#" class="button-order">download</a>
+				</div>
+
+				<div class="photo-container">
+					<div class="try">
+						<img src="img/photos/windows98.jpg" alt="A mischievous-looking teddy">
+					</div>
+			  	<h3>Windows98</h3>
+			  	<p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+					<a href="#" class="button-order">download</a>
 				</div>
 
 				<!-- Photos with overlay -->
@@ -73,7 +151,7 @@
 						  <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
 						</div>
 					</div>
-					<a href="#" class="button">download</a>
+					<a href="#" class="button-order">download</a>
 				</div>
 
 				<div class="photo-container">
@@ -84,7 +162,7 @@
 						  <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
 						</div>
 					</div>
-					<a href="#" class="button">download</a>
+					<a href="#" class="button-order">download</a>
 				</div>
 
 				<div class="photo-container">
@@ -95,7 +173,7 @@
 						  <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
 						</div>
 					</div>
-					<a href="#" class="button">download</a>
+					<a href="#" class="button-order">download</a>
 				</div>
 
 			</div>

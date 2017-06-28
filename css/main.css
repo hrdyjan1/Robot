@@ -106,7 +106,7 @@ p {
 .photo-container img {
  	max-width: 100%;
 }
-.button {
+.button-order {
 	width: 70%;
 	font-weight: 700;
 	display: block;
@@ -114,6 +114,12 @@ p {
 	text-transform: uppercase;
 	padding: 10px 0;
 	margin: auto;
+
+	-webkit-transition: .55s ease;
+  -moz-transition: .55s ease;
+  -ms-transition: .55s ease;
+  -o-transition: .55s ease;
+  transition: .55s ease;
 }
 
 /* ---- Photo Overlay ---- */
@@ -145,7 +151,7 @@ p {
   Navigation
 ==================================== */
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0 0 1em 0;
     padding: 0;
@@ -154,16 +160,17 @@ ul {
     background-color: #f3f3f3;
 }
 
-li {
+nav li {
     float: left;
 }
 
-li a {
+nav li a {
     display: block;
     color: #666;
     text-align: center;
     padding: 14px 24px;
     text-decoration: none;
+		font-weight: 400;
 }
 
 nav li a:hover:not(.active) {
@@ -190,7 +197,7 @@ nav li a.active {
 .search-input input#search{
   width: 48px;
   height: 52px;
-  background: #ddd;
+  background: #f3f3f3;
   border: none;
   /*float: left;*/
   color: #666;
@@ -218,7 +225,7 @@ nav li a.active {
   margin-left: 8px;
   margin-top: 14px;
   z-index: 100;
-  color: #4f5b66;
+	color: #4f5b66;
 }
 
 .search-input input#search:focus, .search-input input#search:active{
